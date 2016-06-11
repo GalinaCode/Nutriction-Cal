@@ -28,6 +28,7 @@ class NDBNutrient: NSManagedObject {
 		let entity = NSEntityDescription.entityForName("NDBNutrient", inManagedObjectContext: context)!
 		super.init(entity: entity, insertIntoManagedObjectContext: context)
 		
+        
 		self.id = (dictionary["nutrient_id"] as! Int)
 		self.name = (dictionary["name"] as! String)
 		self.unit = (dictionary["unit"] as! String)

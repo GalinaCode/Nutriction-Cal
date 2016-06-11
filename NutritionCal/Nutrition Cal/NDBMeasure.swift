@@ -29,6 +29,7 @@ class NDBMeasure: NSManagedObject {
 		
 		self.label = (dictionary["label"] as! String)
 		
+        
 		if let eqvNumber = dictionary["eqv"] as? Int {
 			self.eqv = eqvNumber
 		} else {
